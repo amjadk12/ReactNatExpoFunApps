@@ -5,8 +5,13 @@ export class Quote extends Component {
   render() {
     return (
       <View>
-        <Text>{this.props.QuoteText}</Text>
-        <Text>-{this.props.QuoteAuthor}</Text>
+        <Text>
+          {this.props.QuoteId}.{this.props.QuoteText}
+        </Text>
+        <Text>
+          ---
+          {this.props.QuoteAuthor}
+        </Text>
       </View>
     );
   }
