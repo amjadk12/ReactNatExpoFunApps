@@ -1,12 +1,11 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { Product } from " ./Component/product.jsx";
-export default class App extends React.Component {
+
+export default class product extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>App is testing from the VS code</Text>
-        <Product />
+        <Text>Product Component</Text>
       </View>
     );
   }

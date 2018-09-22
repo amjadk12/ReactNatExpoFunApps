@@ -1,5 +1,7 @@
 # ReactNatExpoFunApps
 
+Reference Learn Expo : https://expo.io/learn
+
 Step 1:
 Get the command line tool
 You will run this tool locally to package, serve, and publish your projects.
