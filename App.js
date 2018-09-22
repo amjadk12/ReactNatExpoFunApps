@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { Product } from " ./Component/product.jsx";
+import { Product } from "./Component/product";
 export default class App extends React.Component {
   render() {
     return (
