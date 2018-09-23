@@ -25,6 +25,15 @@ export default class App extends React.Component {
     ]
   };
 
+  handleNewQuote = () => {
+    const quote = {
+      id: 6,
+      value: "Humne tumko dekha.. aap ke mobile mein!",
+      auth: "Faizaan Khan"
+    };
+    let quotes = this.state.quotes.concat(quote);
+    this.setState({ quotes });
+  };
   render() {
     return (
       <View style={styles.container}>
@@ -36,7 +45,7 @@ export default class App extends React.Component {
         >
           <Text>Add New Quote</Text>
         </TouchableOpacity>
-        <Quotes quotes={this.state.quotes} />
+        <Quotes quotes={this.state.quotes} onNewQuote={this.handleNewQuote} />
       </View>
     );
   }
