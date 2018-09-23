@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import { Quotes } from "./Component/Quotes";
 export default class App extends React.Component {
   state = {
@@ -18,7 +18,8 @@ export default class App extends React.Component {
       },
       {
         id: 5,
-        value: "Empower every person and every organisation to acive more..",
+        value:
+          "Empower every person and every organisation on this planet  to achieve more",
         auth: "Satya Nadella"
       }
     ]
@@ -27,6 +28,14 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => {
+            alert("Clicked Plus!!");
+          }}
+        >
+          <Text>Add New Quote</Text>
+        </TouchableOpacity>
         <Quotes quotes={this.state.quotes} />
       </View>
     );
@@ -39,5 +48,15 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center"
+  },
+  button: {
+    backgroundColor: "#859a9b",
+    borderRadius: 30,
+    padding: 10,
+    marginBottom: 20,
+    shadowColor: "#303838",
+    shadowOffset: { width: 0, height: 5 },
+    shadowRadius: 20,
+    shadowOpacity: 0.35
   }
 });

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "myFunApps",
+    "name": "Sher App",
     "description": "This project is really great.",
     "slug": "myFunApps",
     "privacy": "public",
@@ -14,14 +14,16 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pickup.ShayeriApp"
+    },
+    "android": {
+      "package": "com.pickup.ShayeriApp"
+    },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    }
+    "assetBundlePatterns": ["**/*"]
   }
 }
