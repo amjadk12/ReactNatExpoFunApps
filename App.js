@@ -51,15 +51,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center"
-  },
-  button: {
-    backgroundColor: "#859a9b",
-    borderRadius: 30,
-    padding: 10,
-    marginBottom: 20,
-    shadowColor: "#303838",
-    shadowOffset: { width: 0, height: 5 },
-    shadowRadius: 20,
-    shadowOpacity: 0.35
   }
 });
