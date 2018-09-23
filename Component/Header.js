@@ -4,10 +4,12 @@ import { StyleSheet, Image, View, Text } from "react-native";
 export class Header extends Component {
   render() {
     return (
-      <View style={Style.header}>
-        <Image source={require("../assets/MyVillage.png")} style={styles.cart}>
-          <Text style={styles.logo}>Pickup Business</Text>
-        </Image>
+      <View style={styles.header}>
+        <Image
+          source={require("../assets/MyVillage.png")}
+          style={styles.cart}
+        />
+        <Text style={styles.logo}>Pickup Business</Text>
       </View>
     );
   }
