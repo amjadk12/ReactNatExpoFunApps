@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import { Quotes } from "./Component/Quotes";
+import { Header } from "./Component/Header";
 export default class App extends React.Component {
   state = {
     quotes: [
@@ -37,14 +38,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            alert("Clicked Plus!!");
-          }}
-        >
-          <Text>Add New Quote</Text>
-        </TouchableOpacity>
+        <Header />
         <Quotes quotes={this.state.quotes} onNewQuote={this.handleNewQuote} />
       </View>
     );
